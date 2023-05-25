@@ -1,27 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  @apply m-0 p-0 box-border;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.container {
+  @apply px-[2%] md:px-[5%] lg:px-[10%] xl:px-[15%] max-w-[100%];
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.container__left {
+  @apply pl-[2%] md:pl-[5%] lg:pl-[10%] xl:pl-[15%] max-w-[100%];
+}
+
+h1 {
+  @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold;
+}
+
+section {
+  @apply py-10 lg:py-20;
 }
