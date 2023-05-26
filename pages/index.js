@@ -10,13 +10,11 @@ const Home = () => {
   }, [show]);
   return (
     <div>
-      <div className="h-[100vh] w-full relative">
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-          <section className="flex flex-col gap-10 items-center justify-center container">
-            <h1 className="text-gray-800 text-center">
-              Musiur Alam Opu
-            </h1>
-            <p className="text-gray-600  text-center">
+      <div className="h-[100vh] w-full relative bg-[#D7DEF3]">
+        <div className="absolute top-0 left-0 w-full lg:w-1/2 h-full flex items-center justify-center">
+          <section className="flex flex-col gap-10 items-start justify-center container">
+            <h1 className="text-gray-800">Musiur Alam Opu</h1>
+            <p className="text-gray-600 ">
               Sint minim dolore non laboris eu ex nostrud excepteur exercitation
               eu elit proident sunt. Occaecat enim tempor est minim eiusmod
               adipisicing esse ex aute et. Id in non non labore dolore duis
